@@ -172,6 +172,10 @@ http://127.0.0.1:7860
 **Basmala Khaled**
 
 AI Engineer
+ط
+- Kaggle Notebook:
+  https://www.kaggle.com/code/basmalakhaled20/oral-diseases-image-classification
+
 
 GitHub:
 https://github.com/basmalakhaled20
