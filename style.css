@@ -1,0 +1,319 @@
+/* ==========================================
+   Oral Diseases AI - Custom Theme
+   Matches the design mockup exactly
+   ========================================== */
+
+:root {
+    --bg-dark: #060d1a;
+    --card-bg: rgba(10, 22, 45, 0.82);
+    --card-bg-solid: #0A1931;
+    --blue-deep: #1A3D63;
+    --blue-mid: #4A7FA7;
+    --blue-ice: #B3CFE5;
+    --white: #F6FAFD;
+    --border-soft: rgba(179, 207, 229, 0.15);
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+}
+
+/* ---------- Page background ---------- */
+.gradio-container{
+
+    background:
+        radial-gradient(circle at top left,#18375d 0%,transparent 45%),
+        radial-gradient(circle at bottom right,#214f7a 0%,transparent 40%),
+        linear-gradient(135deg,#071220 0%,#0a1931 45%,#102844 100%);
+
+    min-height:100vh;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+
+.gradio-container::before {
+    content: "";
+}
+
+/* ---------- Hero header ---------- */
+.hero-wrap {
+    text-align: center;
+    padding: 40px 20px 24px 20px;
+}
+
+.hero-wrap .hero-title {
+    font-size: 46px;
+    font-weight: 800;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.hero-wrap .hero-title .tooth-icon {
+    font-size: 42px;
+    filter: drop-shadow(0 0 12px rgba(179,207,229,0.5));
+}
+
+.hero-wrap .hero-title .plain {
+    color: var(--white);
+}
+
+.hero-wrap .hero-title .gradient {
+    background: linear-gradient(90deg, #F6FAFD, #B3CFE5, #4A7FA7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-wrap .hero-subtitle {
+    color: var(--blue-ice);
+    font-size: 16px;
+    margin: 14px auto 22px auto;
+    max-width: 560px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(10, 25, 49, 0.75);
+    border: 1px solid var(--border-soft);
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: 14px;
+    color: var(--blue-ice);
+    backdrop-filter: blur(6px);
+}
+
+.badge-pill .badge-icon {
+    background: var(--blue-mid);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 3px 7px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* ---------- Cards ---------- */
+.card-panel, .block {
+    background: var(--card-bg) !important;
+    border-radius: var(--radius-lg) !important;
+    border: 1px solid var(--border-soft) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35) !important;
+    backdrop-filter: blur(10px);
+    padding: 22px !important;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.card-heading .icon {
+    color: var(--blue-ice);
+}
+
+.card-subtext {
+    color: var(--blue-ice);
+    opacity: 0.75;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+/* ---------- Upload area (Gradio Image component) ---------- */
+.upload-container .wrap,
+div[data-testid="image"] {
+    background: rgba(6, 14, 28, 0.55) !important;
+    border: 2px dashed rgba(179, 207, 229, 0.35) !important;
+    border-radius: var(--radius-md) !important;
+}
+
+.upload-container button {
+    background: linear-gradient(90deg, #4A7FA7, #B3CFE5) !important;
+    color: #07101f !important;
+    border: none !important;
+    border-radius: 14px !important;
+    font-weight: bold !important;
+}
+
+/* ---------- Prediction result ---------- */
+.predicted-disease {
+    font-size: 44px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #F6FAFD, #B3CFE5, #4A7FA7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 10px 0 14px 0;
+}
+
+.predicted-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(74, 127, 167, 0.18);
+    border: 1px solid rgba(179, 207, 229, 0.25);
+    color: var(--blue-ice);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.confidence-label {
+    color: var(--blue-ice);
+    opacity: 0.8;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.confidence-value {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.progress-track {
+    width: 100%;
+    height: 10px;
+    background: rgba(179, 207, 229, 0.12);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #4A7FA7, #B3CFE5);
+}
+
+.info-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(74, 127, 167, 0.1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    color: var(--blue-ice);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.empty-state {
+    color: var(--blue-ice);
+    opacity: 0.55;
+    font-size: 14px;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+/* ---------- Class probabilities ---------- */
+.prob-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.prob-name {
+    width: 150px;
+    flex-shrink: 0;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.prob-track {
+    flex: 1;
+    height: 10px;
+    background: rgba(179, 207, 229, 0.12);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.prob-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #4A7FA7, #B3CFE5);
+}
+
+.prob-fill.top {
+    background: linear-gradient(90deg, #4A7FA7, #F6FAFD);
+}
+
+.prob-value {
+    width: 60px;
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 14px;
+    color: var(--blue-ice);
+}
+
+.prob-value.top {
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* ---------- Footer disclaimer ---------- */
+.footer-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background: var(--card-bg);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    color: var(--blue-ice);
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ---------- Predict button ---------- */
+.predict-btn {
+    background: linear-gradient(90deg, #4A7FA7, #B3CFE5) !important;
+    color: #07101f !important;
+    border: none !important;
+    border-radius: 14px !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    padding: 12px !important;
+}
+.gradio-container::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+        radial-gradient(circle,#4a7fa722 1px,transparent 1px);
+
+    background-size:90px 90px;
+
+    opacity:.18;
+
+    pointer-events:none;
+}
+
+.gradio-container::after{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 20% 15%,rgba(74,127,167,.12),transparent 25%),
+    radial-gradient(circle at 80% 75%,rgba(179,207,229,.08),transparent 25%);
+
+    pointer-events:none;
+}
