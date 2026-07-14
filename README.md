@@ -35,13 +35,13 @@ The application provides a clean user interface where users can upload an oral i
 ### Main Interface
 
 <p align="center">
-<img src="assets/interface.png" width="100%">
+<img src="assets/demo.png" width="100%">
 </p>
 
 ### Prediction Example
 
 <p align="center">
-<img src="assets/demo.png" width="100%">
+<img src="assets/interface.png" width="100%">
 </p>
 
 ---
