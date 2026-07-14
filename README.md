@@ -1,10 +1,6 @@
 # 🦷 Oral Diseases Image Classification
 
 <p align="center">
-  <img src="assets/demo.png" width="100%">
-</p>
-
-<p align="center">
 Deep Learning web application for automatic oral disease classification using TensorFlow, Keras, ResNet50 and Gradio.
 </p>
 
